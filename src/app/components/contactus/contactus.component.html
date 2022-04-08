@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="col-md-7 col-lg-12">
+        <h4 class="mb-3">Contactanos</h4>
+        <form class="needs-validation" autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()">
+            <div class="row g-3">
+                <div class="col-sm-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="" formControlName="nombre">
+                <div class="invalid-feedback">
+                    Valid first name is required.
+                </div>
+                </div>
+
+                <div class="col-sm-6">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="" formControlName="apellido">
+                <div class="invalid-feedback">
+                    Valid last name is required.
+                </div>
+                </div>
+
+                <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" id="email" placeholder="" formControlName="email">
+                <div class="invalid-feedback">
+                    Your username is required.
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-12">
+                <label for="comentario" class="form-label">Comentario <span class="text-muted"></span></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="comentario"></textarea>
+                </div>
+                
+            </div>
+            <hr class="my-4">
+            <button class="w-100 btn btn-primary btn-lg" type="submit" >Enviar</button>
+        </form>
+    </div>
+</div>

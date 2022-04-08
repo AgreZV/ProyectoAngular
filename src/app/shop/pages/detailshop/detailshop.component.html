@@ -1,0 +1,16 @@
+<div class="container">
+    <h1> Estas mirando {{shop.name}}</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <img [src]="shop.img" class="img-fluid">
+            <br><br>
+            <div class="col-md-8">
+                <h3>{{shop.name}}</h3>
+                <hr>
+                <p> Descripción {{shop.description}}</p>
+                <a class="btn btn-outline-primary" [routerLink]="['/shop']"> Volver</a>
+            </div>
+        </div>
+    </div>
+</div>

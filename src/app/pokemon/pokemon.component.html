@@ -1,0 +1,17 @@
+<div class="container">
+  <h3>Consulta a la pokedex</h3>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Nombre o ID de pokemon" aria-describedby="button-addon2" [(ngModel)]="name" >
+        <button class="btn btn-outline-info" type="button" id="button-addon2" (click)="search()">Buscar</button> 
+    </div>
+    <div *ngIf="urlImage">
+        <div class="card" style="width: 18rem;">
+            <img src="{{urlImage}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{nick | uppercase}} - ({{id}})</h5>
+              <p class="card-text">text</p>
+              <a class="btn btn-primary" (click)="details()">detalle</a>
+            </div>
+          </div>
+    </div>
+</div> 

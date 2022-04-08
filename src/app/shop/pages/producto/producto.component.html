@@ -1,0 +1,11 @@
+
+<div class="card" style="width: 18rem;">
+    <img [src]="dataInput.img" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{dataInput.name}}</h5>
+      <p class="card-text">{{dataInput.description}}</p>
+      <button class="btn btn-primary" (click)="detailShop(indexInput)"> Ver detalle</button>      
+      <hr>
+      <a class="btn btn-primary" (click)="buyProducto()">Comprar</a>
+    </div>
+  </div>
