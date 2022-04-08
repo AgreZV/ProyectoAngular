@@ -34,8 +34,18 @@ export class ShopComponent implements OnInit {
     localStorage.setItem('carrito', JSON.stringify(this.carrito));
   }
 
-    getShopv2(id:any){        
+  getShopv2(id:any){        
     console.log(id);
   }
+
+  deleteElement(element:any){
+    let index = this.carrito.indexOf(this.carrito[element]);
+    if(index > -1){
+      this.carrito.splice(index, 1);
+      localStorage.setItem('carrito', JSON.stringify(this.carrito));
+    }
+
+  }
+
 
 }

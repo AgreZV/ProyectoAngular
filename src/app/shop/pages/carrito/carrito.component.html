@@ -1,6 +1,7 @@
 <ul class="list-group">
     <li class="list-group-item">
-        <p> Nombre : {{shop.name}}</p>
-        <p> Descripción: {{shop.description}}</p>
+        <p> Nombre : {{shop?.name}}</p>
+        <p> Descripción: {{shop?.description}}</p>
+        <button (click)="deleteElement(indexElement)" class="btn btn-danger"> Quitar</button>
     </li>
 </ul>

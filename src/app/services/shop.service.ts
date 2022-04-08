@@ -38,4 +38,5 @@ export class ShopService {
   getProducto(id:any){
     return this.items[id]
   }
+  
 }

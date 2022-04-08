@@ -10,9 +10,9 @@ export class CarritoComponent implements OnInit {
   @Input() data:any;
   @Input() indexElement:any;
   shop:any;  
-  @Output() gameDelete: EventEmitter<any>;
+  @Output() shopDelete: EventEmitter<any>;
 
-  constructor(private srvShop: ShopService) {this.gameDelete = new EventEmitter();}
+  constructor(private srvShop: ShopService) {this.shopDelete = new EventEmitter();}
 
   ngOnInit(): void {
     console.log(this.data)
@@ -25,7 +25,7 @@ export class CarritoComponent implements OnInit {
   }
 
   deleteElement(index:any){     
-    this.gameDelete.emit(index);
+    this.shopDelete.emit(index);
   }
 
 }
